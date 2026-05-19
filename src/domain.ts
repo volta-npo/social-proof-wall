@@ -76,7 +76,11 @@ export const domain = {
     "Website placement planned",
     "Quote rotation generated",
     "HTML snippet generated",
-    "Proof registry exported"
+    "Proof registry exported",
+    "Permission state machine updated",
+    "Source URL/evidence captured",
+    "Embed sanitization reviewed",
+    "Quote redaction history recorded"
   ],
   "artifacts": [
     "Embeddable HTML",
@@ -88,5 +92,32 @@ export const domain = {
     "No edited meaning",
     "Unverified proof blocked from export"
   ],
-  "sampleClient": "Oak & Olive Cafe"
+  "sampleClient": "Oak & Olive Cafe",
+  "modules": [
+    { "name": "Permission state machine", "description": "Requested, granted, limited, expired, revoked, and blocked proof states with required evidence." },
+    { "name": "Evidence schema", "description": "Source URL, capture date, quote owner, claim type, asset license, and channel authorization." },
+    { "name": "Sanitized embed generator", "description": "Escaped HTML snippets, channel-safe quote length, no-script fallback, and CSP-friendly markup." },
+    { "name": "Redaction history", "description": "Before/after quote edits, meaning-preservation notes, approver, and audit trail." }
+  ],
+  "saas": {
+    "playbooks": [
+      "Proof permission approval workflow",
+      "Source evidence collection",
+      "Quote redaction review",
+      "Channel/license placement audit"
+    ],
+    "automations": [
+      "Embed sanitization checklist",
+      "Permission expiry warnings",
+      "Quote edit-history export",
+      "Channel license rule validation"
+    ],
+    "revenueModel": "Proof management SaaS with embed seats, permission renewals, and channel-specific export packs",
+    "integrationTargets": [
+      "Website embed snippets",
+      "Google Reviews source links",
+      "Notion testimonial boards",
+      "CRM account proof records"
+    ]
+  }
 };
